@@ -4,6 +4,7 @@ type Industry = {
   title: string;
   description: string;
   image: string;
+  link: string;
 };
 
 const industryImages = [
@@ -43,168 +44,196 @@ const industries: Industry[] = [
     description:
       "Tender Elite provides specialized tendering and procurement support for hospitals, healthcare institutions, diagnostic centers, pharmaceutical companies, medical equipment suppliers, laboratory solution providers, and healthcare service organizations across India. We assist clients in managing complex procurement requirements related to medical devices, surgical instruments, diagnostic equipment, hospital furniture, consumables, healthcare IT systems, and facility management services. Our team ensures accurate documentation, regulatory compliance, technical bid preparation, and smooth participation in healthcare procurement tenders issued by government hospitals, medical colleges, ESIC hospitals, defence healthcare organizations, and private healthcare institutions.",
     image: industryImages[0],
+    link: "/industries/healthcare-medical"
   },
   {
     title: "Construction & Infrastructure Industry",
     description:
       "We provide comprehensive tender management services for construction companies, infrastructure developers, civil contractors, EPC contractors, project management firms, and engineering consultants involved in public and private infrastructure projects. Our expertise includes support for roads, bridges, buildings, smart city projects, irrigation systems, urban development, railway infrastructure, airport development, and industrial construction tenders. We help businesses manage technical documentation, BOQ preparation, compliance verification, project eligibility requirements, and online tender submissions efficiently and professionally.",
     image: industryImages[1],
+    link: "/industries/construction-infrastructure"
   },
   {
     title: "Information Technology (IT) Industry",
     description:
       "Tender Elite supports software companies, IT infrastructure providers, cybersecurity firms, networking companies, cloud solution providers, system integrators, and digital service providers participating in government and corporate procurement opportunities. We assist in preparing technical proposals, compliance documents, product specifications, service-level agreements, and commercial bids for software development, hardware supply, networking solutions, cybersecurity implementation, data management, cloud computing, ERP systems, and digital transformation projects.",
     image: industryImages[2],
+    link: "/industries/information-technology"
   },
   {
     title: "Electrical & Electronics Industry",
     description:
       "Our services support electrical contractors, electronics manufacturers, power equipment suppliers, industrial automation companies, and energy solution providers participating in procurement opportunities across various sectors. We assist with tenders related to transformers, switchgear systems, electrical panels, cables, lighting systems, renewable energy equipment, industrial automation systems, surveillance equipment, and electronic devices. Our team ensures accurate technical documentation, compliance management, and professional bid preparation.",
     image: industryImages[3],
+    link: "/industries/electrical-electronics"
   },
   {
     title: "Mechanical & Engineering Industry",
     description:
       "Tender Elite provides procurement and tendering support for mechanical engineering companies, fabrication firms, industrial equipment manufacturers, machinery suppliers, maintenance contractors, and technical service providers. We help businesses participate in tenders related to heavy machinery, fabrication works, HVAC systems, industrial maintenance, manufacturing equipment, plant installations, and engineering consultancy services. Our expertise ensures professionally managed technical and financial bid submissions.",
     image: industryImages[4],
+    link: "/industries/mechanical-engineering"
   },
   {
     title: "Railway Industry",
     description:
       "We assist manufacturers, contractors, suppliers, and service providers participating in railway procurement and infrastructure development projects. Our team supports tender participation for railway equipment, signaling systems, track maintenance, electrical systems, station development, rolling stock supply, safety systems, and engineering services. We help clients manage railway portal registrations, vendor approvals, compliance documentation, and tender submissions according to railway procurement standards.",
     image: industryImages[5],
+    link: "/industries/railway"
   },
   {
     title: "Defence & Security Industry",
     description:
       "Tender Elite supports businesses involved in defence procurement, security infrastructure, surveillance systems, tactical equipment, communication systems, and government security projects. We assist clients in preparing documentation, technical specifications, OEM authorizations, security compliance records, and procurement submissions required for defence and security tenders issued by defence departments, paramilitary organizations, and government security agencies.",
     image: industryImages[6],
+    link: "/industries/defence-security"
   },
   {
     title: "Pharmaceutical Industry",
     description:
       "Our team provides tendering support for pharmaceutical manufacturers, medicine distributors, healthcare product suppliers, vaccine providers, and laboratory consumable suppliers participating in healthcare procurement opportunities. We assist in preparing compliance documentation, product certifications, quality standards, regulatory approvals, and technical bid documents required for government pharmaceutical procurement and institutional healthcare supply contracts.",
     image: industryImages[7],
+    link: "/industries/pharmaceutical"
   },
   {
     title: "Agriculture & Agro Industry",
     description:
       "We support agricultural companies, agro-product suppliers, irrigation solution providers, seed manufacturers, fertilizer companies, farming equipment suppliers, and food processing businesses in government and institutional procurement projects. Our services include tender documentation, technical compliance support, product specification management, and procurement participation for agriculture development and rural infrastructure projects.",
     image: industryImages[8],
+    link: "/industries/agriculture-agro-industry"
   },
   {
     title: "FMCG & Consumer Goods Industry",
     description:
       "Tender Elite assists FMCG manufacturers, distributors, wholesalers, and consumer goods suppliers in participating in procurement tenders related to packaged products, household items, personal care products, cleaning materials, grocery supplies, and institutional procurement requirements. We help businesses manage product documentation, catalogue preparation, pricing compliance, and online tender submissions professionally.",
     image: industryImages[9],
+    link: "/industries/fmcg-consumer-goods"
   },
   {
     title: "Telecom Industry",
     description:
       "Tender Elite assists telecom operators, networking solution providers, communication equipment manufacturers, internet service providers, and telecom infrastructure companies participating in procurement opportunities related to connectivity, communication systems, broadband infrastructure, networking equipment, and digital communication projects.",
     image: industryImages[10],
+    link: "/industries/telecom"
   },
   {
     title: "Food & Catering Industry",
     description:
       "Tender Elite provides tender support for catering companies, food suppliers, hospitality service providers, bakery suppliers, packaged food distributors, and institutional kitchen management companies. We assist businesses participating in tenders for hospitals, railways, educational institutions, government departments, defence organizations, and corporate facilities requiring catering and food supply services.",
     image: industryImages[11],
+    link: "/industries/food-catering"
   },
   {
     title: "Facility Management Industry",
     description:
       "We assist facility management companies, housekeeping service providers, maintenance contractors, pest control agencies, sanitation solution providers, and support service companies participating in facility management tenders. Our services cover documentation support, compliance management, manpower-related submissions, technical proposals, and service contract tender participation for government and private sector clients.",
     image: industryImages[12],
+    link: "/industries/facility-management"
   },
   {
     title: "Manpower & Staffing Industry",
     description:
       "Tender Elite supports manpower agencies, outsourcing firms, HR service providers, and staffing companies participating in workforce supply and service-based procurement opportunities. We assist in preparing employee compliance documentation, statutory registrations, financial eligibility records, manpower deployment plans, and tender submissions for government and corporate staffing contracts.",
     image: industryImages[13],
+    link: "/industries/manpower-staffing"
   },
   {
     title: "Textile & Garment Industry",
     description:
       "We provide procurement support for textile manufacturers, garment suppliers, uniform manufacturers, fabric distributors, and industrial clothing providers participating in institutional and government procurement opportunities. Our services include tender documentation, product specification compliance, sampling support, catalogue preparation, and bid management for textile-related procurement projects.",
     image: industryImages[14],
+    link: "/industries/textile-garment"
   },
   {
     title: "Automobile & Transportation Industry",
     description:
       "Tender Elite assists vehicle manufacturers, transportation contractors, automotive equipment suppliers, logistics providers, and mobility solution companies participating in procurement tenders related to transportation services, vehicle supply, fleet management, and automotive infrastructure projects. We help businesses manage technical documentation, compliance requirements, and procurement submissions professionally.",
     image: industryImages[15],
+    link: "/industries/automobile-transportation"
   },
   {
     title: "Oil & Gas Industry",
     description:
       "Our team provides tender management support for companies involved in petroleum products, industrial fuels, gas supply systems, refinery services, pipeline infrastructure, and energy-related operations. We assist in preparing technical documentation, safety compliance records, certifications, and procurement submissions for oil and gas industry projects.",
     image: industryImages[16],
+    link: "/industries/oil-gas"
   },
   {
     title: "Renewable Energy Industry",
     description:
       "We support solar energy companies, wind energy solution providers, renewable infrastructure developers, EPC contractors, and sustainable energy businesses participating in green energy and environmental projects. Our expertise includes support for solar panel supply, renewable power systems, energy efficiency projects, and government sustainability initiatives.",
     image: industryImages[17],
+    link: "/industries/renewable-energy"
   },
   {
     title: "Education & Institutional Industry",
     description:
       "We provide procurement and tendering support for educational institutions, training centers, universities, e-learning companies, laboratory suppliers, furniture manufacturers, and educational equipment providers. Our team helps businesses participate in tenders related to institutional infrastructure, digital classrooms, educational software, laboratory setup, and academic support services.",
     image: industryImages[18],
+    link: "/industries/education-institutional"
   },
   {
     title: "Printing & Stationery Industry",
     description:
       "Our services support printing companies, publication houses, stationery suppliers, branding solution providers, packaging printers, and office supply businesses participating in procurement opportunities for government departments, educational institutions, corporate offices, and public sector organizations.",
     image: industryImages[19],
+    link: "/industries/printing-stationery"
   },
   {
     title: "Water Supply & Sanitation Industry",
     description:
       "We support companies involved in water treatment systems, sanitation projects, plumbing infrastructure, sewage management, waste management, and public utility services. Our team assists in procurement participation for municipal corporations, public health engineering departments, rural development projects, and environmental infrastructure initiatives.",
     image: industryImages[20],
+    link: "/industries/water-supply-sanitation"
   },
   {
     title: "Security & Surveillance Industry",
     description:
       "Tender Elite assists security agencies, CCTV suppliers, fire safety companies, surveillance system providers, access control solution providers, and electronic security businesses participating in government and private sector security tenders. We help manage technical documentation, compliance requirements, certifications, and professional bid submissions.",
     image: industryImages[21],
+    link: "/industries/security-surveillance"
   },
   {
     title: "Mining & Metals Industry",
     description:
       "Tender Elite provides support for mining companies, metal manufacturers, industrial material suppliers, heavy engineering firms, and extraction service providers participating in industrial procurement opportunities. We assist in technical bid preparation, compliance management, vendor registration, and procurement documentation for mining and metals sector projects.",
     image: industryImages[22],
+    link: "/industries/mining-metals"
   },
   {
     title: "Chemicals & Industrial Products Industry",
     description:
       "We assist chemical manufacturers, industrial product suppliers, laboratory equipment providers, industrial process companies, and specialty chemical businesses participating in procurement tenders. Our services include compliance support, technical documentation, product certifications, and procurement management for industrial and institutional supply projects.",
     image: industryImages[23],
+    link: "/industries/chemical-industrial-products"
   },
   {
     title: "Hospitality & Tourism Industry",
     description:
       "Tender Elite supports hotels, resorts, event management companies, tourism operators, catering providers, and hospitality infrastructure companies participating in procurement opportunities related to tourism development, hospitality services, facility supply, and event management projects.",
     image: industryImages[24],
+    link: "/industries/hospitality-tourism"
   },
   {
     title: "Logistics & Supply Chain Industry",
     description:
       "We provide tender management support for logistics companies, transport operators, warehousing providers, courier services, freight management firms, and supply chain solution companies participating in transportation and distribution-related procurement projects across India.",
     image: industryImages[25],
+    link: "/industries/logistics"
   },
   {
     title: "Packaging Industry",
     description:
       "Our services assist packaging manufacturers, labeling companies, industrial packaging suppliers, corrugated box manufacturers, flexible packaging companies, and branding solution providers participating in procurement opportunities across manufacturing, FMCG, healthcare, and industrial sectors.",
     image: industryImages[26],
+    link: "/industries/packaging"
   },
   {
     title: "Government & Public Sector Projects",
     description:
       "Tender Elite provides complete procurement consultancy and tender management support for businesses participating in central government, state government, PSU, municipal corporation, railway, defence, healthcare, education, and institutional procurement projects across India. Our team ensures professional handling of tender documentation, portal management, compliance verification, technical bid preparation, financial bid submission, and end-to-end procurement coordination for diverse public sector opportunities.",
     image: industryImages[27],
+    link: "/industries/government-public-sector"
   },
 ];
 
@@ -223,7 +252,7 @@ function IndustryCard({
 }) {
   return (
     <Link
-      href="/industries"
+      href={industry.link}
       className="
         group relative flex min-h-[256px] w-full flex-col
         justify-center overflow-hidden rounded-[20px]
