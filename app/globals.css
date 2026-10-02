@@ -1,0 +1,248 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* =========================================
+   TENDER ELITE SPLASH SCREEN
+========================================= */
+
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  background: #020914;
+  z-index: 999999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    opacity 0.6s ease,
+    visibility 0.6s ease;
+}
+
+.splash-image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-image {
+  width: 94%;
+  height: 94%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* Fade out */
+
+.splash-fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .splash-image {
+    width: 94%;
+    height: 94%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .splash-image {
+    width: 94%;
+    height: 94%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .splash-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-screen {
+    transition: none;
+  }
+}
+/* =========================================
+   TENDER ELITE CUSTOM CURSOR
+========================================= */
+
+@media (min-width: 768px) {
+
+  * {
+    cursor: none !important;
+  }
+
+  .custom-cursor-dot {
+    position: fixed;
+    z-index: 9999999;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #D4A017;
+    pointer-events: none;
+
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+
+    transition:
+      transform 0.12s ease,
+      opacity 0.15s ease;
+  }
+
+  .custom-cursor-ring {
+    position: fixed;
+    z-index: 9999998;
+    width: 34px;
+    height: 34px;
+    border: 1.5px solid #D4A017;
+    border-radius: 50%;
+    pointer-events: none;
+
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+
+    transition:
+      transform 0.18s ease,
+      opacity 0.2s ease,
+      width 0.2s ease,
+      height 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .custom-cursor-visible {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .custom-cursor-hover.custom-cursor-dot {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  .custom-cursor-hover.custom-cursor-ring {
+    width: 46px;
+    height: 46px;
+    background: rgba(212, 160, 23, 0.12);
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* =========================================
+     GOLDEN DUST CLICK EFFECT
+  ========================================= */
+
+  .cursor-spark {
+    position: fixed;
+    z-index: 10000000;
+    pointer-events: none;
+
+    border-radius: 50%;
+    background: #D4A017;
+
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    box-shadow:
+      0 0 4px rgba(212, 160, 23, 0.95),
+      0 0 10px rgba(212, 160, 23, 0.65),
+      0 0 18px rgba(212, 160, 23, 0.35);
+
+    animation: golden-dust 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+      forwards;
+  }
+
+  @keyframes golden-dust {
+    0% {
+      opacity: 0;
+      transform:
+        translate(-50%, -50%)
+        translate(0, 0)
+        scale(0.2);
+    }
+
+    15% {
+      opacity: 1;
+      transform:
+        translate(-50%, -50%)
+        translate(0, 0)
+        scale(1);
+    }
+
+    60% {
+      opacity: 0.8;
+    }
+
+    100% {
+      opacity: 0;
+      transform:
+        translate(-50%, -50%)
+        translate(var(--spark-x), var(--spark-y))
+        scale(0.15);
+    }
+  }
+}
+
+/* Mobile / Tablet */
+
+@media (max-width: 767px) {
+  .custom-cursor-dot,
+  .custom-cursor-ring,
+  .cursor-spark {
+    display: none;
+  }
+}
+* {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
