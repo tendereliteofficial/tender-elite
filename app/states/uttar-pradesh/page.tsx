@@ -735,7 +735,7 @@ export default function UttarPradeshPage() {
               "
             >
               <img
-                src="/images/states/Uttar Pradeshhero.png"
+                src="/images/Uttar Pradeshhero.png"
                 alt="Uttar Pradesh"
                 className="
                   h-[300px] w-full object-cover
