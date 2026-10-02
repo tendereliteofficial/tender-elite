@@ -31,16 +31,16 @@ export default function SplashScreen() {
       <picture className="splash-image-wrapper">
         <source
           media="(max-width: 767px)"
-          srcSet="/images/splash-mobile.png"
+          srcSet="/images/SplashScreenMobile.png"
         />
 
         <source
           media="(max-width: 1199px)"
-          srcSet="/images/splash-tablet.png"
+          srcSet="/images/SplashScreenTab.png"
         />
 
         <img
-          src="/images/splash-desktop.png"
+          src="/images/SplashScreenLaptop.png"
           alt="Tender Elite Welcome"
           className="splash-image"
         />
