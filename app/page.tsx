@@ -467,7 +467,7 @@ export default function Home() {
 
         <div className="mt-8 text-center sm:mt-10">
           <Link
-            href="/contact"
+            href="/locations"
             className={locationViewMoreClass}
           >
             View More
