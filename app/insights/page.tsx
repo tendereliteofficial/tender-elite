@@ -331,7 +331,7 @@ export default function InsightsPage() {
 
           <div className="mx-auto w-full max-w-[542px] overflow-hidden rounded-[28px] bg-[#0F172A] p-0 shadow-[0_15px_35px_rgba(7,27,59,0.2)]">
             <img
-              src="/images/insightnew.png"
+              src="/images/insightsnew.png"
               alt="Tender Elite Insights"
               className="aspect-square w-full rounded-[20px] object-cover"
             />
