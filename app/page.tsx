@@ -50,7 +50,7 @@ const industries = [
   ["Engineering", "/images/engineering.png", "/industries/mechanical-engineering"],
   ["Security Services", "/images/securityservices.png", "/industries/security-surveillance"],
   ["Facility Management", "/images/facilitymanagement.png", "/industries/facility-management"],
-  ["Logistics", "/images/logistics.png", "/industries/logistics-supply-chain"],
+  ["Logistics", "/images/logistics.png", "/industries/logistics"],
   ["Healthcare", "/images/healthcare.png", "/industries/healthcare-medical"],
 ];
 
