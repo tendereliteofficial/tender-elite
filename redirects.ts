@@ -69,7 +69,7 @@ const citiesSame = [
 
 // Maharashtra cities: jahan slug alag hai
 const citiesDiff: [string, string][] = [
-  ["mira-bhayander", "mira-bhayandar"],
+  ["mira-bhayandar", "mira-bhayandar"],
   ["dombivali", "kalyan-dombivli"],
   ["osmanabad-\\(dharashiv\\)", "osmanabad"],
 ];
