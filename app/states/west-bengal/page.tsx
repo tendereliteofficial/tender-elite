@@ -739,7 +739,7 @@ export default function WestBengalPage() {
               "
             >
               <img
-                src="/images/states/West Bengalhero.png"
+                src="/images/West Bengalhero.png"
                 alt="West Bengal"
                 className="
                   h-[300px] w-full object-cover
