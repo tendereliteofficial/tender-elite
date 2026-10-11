@@ -17,7 +17,7 @@ const TYPES = {
     desc: `Professional ${n(slug)} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
   }),
   states: ([slug]) => ({
-    title: `Government Tender Services in ${n(slug)}`,
+    title: `Tender Services in ${n(slug)}`,
     desc: `Tender search, bidding and documentation support for businesses in ${n(slug)}. Track live ${n(slug)} government tenders with Tender Elite.`,
   }),
   locations: (parts) =>
