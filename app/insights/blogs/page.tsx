@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Tender Blogs",
+  description:
+    "Read Tender Elite's blogs on government tenders, GeM, bid preparation and compliance in India. Practical tips and updates for first-time and seasoned bidders.",
+  alternates: { canonical: "/insights/blogs" },
+};
+
 /* =========================================================
    DATA
 ========================================================= */

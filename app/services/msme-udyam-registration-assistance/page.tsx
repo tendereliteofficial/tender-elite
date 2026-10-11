@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("msme-udyam-registration-assistance")} Services`,
+  description: `Professional ${_s("msme-udyam-registration-assistance")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
+  alternates: { canonical: "/services/msme-udyam-registration-assistance" },
+};
+
 import { link } from "fs";
 import Link from "next/link";
 

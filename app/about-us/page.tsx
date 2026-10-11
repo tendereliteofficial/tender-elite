@@ -1,6 +1,13 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+export const metadata = {
+  title: "About Us",
+  description:
+    "Learn about Tender Elite, a trusted government tender partner in India. Meet our team and see how we help businesses find, bid and win tenders.",
+  alternates: { canonical: "/about-us" },
+};
+
 /* =========================================================
    NAVIGATION
 ========================================================= */

@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Tender Services Across India",
+  description:
+    "Find Tender Elite tender support near you. We help businesses across Maharashtra and India with tender search, GeM registration, bidding and compliance.",
+  alternates: { canonical: "/locations" },
+};
+
 /* =========================================================
    NAVIGATION
 ========================================================= */

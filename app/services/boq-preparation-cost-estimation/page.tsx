@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("boq-preparation-cost-estimation")} Services`,
+  description: `Professional ${_s("boq-preparation-cost-estimation")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
+  alternates: { canonical: "/services/boq-preparation-cost-estimation" },
+};
+
 import Link from "next/link";
 
 /* =========================================================

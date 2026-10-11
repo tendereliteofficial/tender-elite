@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `Government Tender Services in ${_s("dadra-and-nagar-haveli-and-daman-and-diu")}`,
+  description: `Tender search, bidding and documentation support for businesses in ${_s("dadra-and-nagar-haveli-and-daman-and-diu")}. Track live ${_s("dadra-and-nagar-haveli-and-daman-and-diu")} government tenders with Tender Elite.`,
+  alternates: { canonical: "/states/dadra-and-nagar-haveli-and-daman-and-diu" },
+};
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 

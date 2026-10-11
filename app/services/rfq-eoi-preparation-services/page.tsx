@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("rfq-eoi-preparation-services")} Services`,
+  description: `Professional ${_s("rfq-eoi-preparation-services")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
+  alternates: { canonical: "/services/rfq-eoi-preparation-services" },
+};
+
 import Link from "next/link";
 
 /* =========================================================

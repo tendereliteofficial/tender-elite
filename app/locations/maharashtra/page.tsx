@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `Tender Services in ${_s("maharashtra")}`,
+  description: `Explore tender support across cities in ${_s("maharashtra")}. Tender Elite helps with tender search, GeM registration, bidding and documentation.`,
+  alternates: { canonical: "/locations/maharashtra" },
+};
+
 import Link from "next/link";
 
 /* =========================================================

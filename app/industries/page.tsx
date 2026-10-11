@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Industries We Serve",
+  description:
+    "Explore the industries Tender Elite serves, from construction and railway to IT, healthcare and oil & gas. Get tender support tailored to your sector.",
+  alternates: { canonical: "/industries" },
+};
+
 type Industry = {
   title: string;
   description: string;

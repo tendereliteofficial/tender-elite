@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("agriculture-agro-industry")} Tender Support`,
+  description: `Find, prepare and win ${_s("agriculture-agro-industry")} government tenders in India. Tender Elite offers expert bidding, documentation and compliance support.`,
+  alternates: { canonical: "/industries/agriculture-agro-industry" },
+};
+
 import Link from "next/link";
 
 /* =========================================================

@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("healthcare-medical")} Tender Support`,
+  description: `Find, prepare and win ${_s("healthcare-medical")} government tenders in India. Tender Elite offers expert bidding, documentation and compliance support.`,
+  alternates: { canonical: "/industries/healthcare-medical" },
+};
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 

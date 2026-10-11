@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Our Tender Services",
+  description:
+    "Tender Elite offers end-to-end tender services: portal registration, GeM support, documentation, bid management and submission for Indian government tenders.",
+  alternates: { canonical: "/services" },
+};
+
 type Service = {
   title: string;
   description: string;

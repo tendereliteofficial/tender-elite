@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `Tender Services in ${_s("kolhapur")}, ${_s("maharashtra")}`,
+  description: `Get local tender support in ${_s("kolhapur")}, ${_s("maharashtra")}: tender search, GeM registration, bid preparation and submission by Tender Elite.`,
+  alternates: { canonical: "/locations/maharashtra/kolhapur" },
+};
+
 import Link from "next/link";
 
 const serifFont = "Georgia, 'Times New Roman', serifFont";

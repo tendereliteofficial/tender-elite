@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Tender University",
+  description:
+    "Tender University by Tender Elite: learn government tender basics, GeM, e-procurement and bidding strategy through simple guides for new and growing businesses.",
+  alternates: { canonical: "/insights/tender-university" },
+};
+
 /* =========================================================
    DATA
 ========================================================= */

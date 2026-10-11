@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `Tender Services in ${_s("chhatrapati-sambhajinagar")}, ${_s("maharashtra")}`,
+  description: `Get local tender support in ${_s("chhatrapati-sambhajinagar")}, ${_s("maharashtra")}: tender search, GeM registration, bid preparation and submission by Tender Elite.`,
+  alternates: { canonical: "/locations/maharashtra/chhatrapati-sambhajinagar" },
+};
+
 import Link from "next/link";
 
 const serifFont = "Georgia, 'Times New Roman', serif";

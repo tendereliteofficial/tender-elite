@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `Government Tender Services in ${_s("jammu-and-kashmir")}`,
+  description: `Tender search, bidding and documentation support for businesses in ${_s("jammu-and-kashmir")}. Track live ${_s("jammu-and-kashmir")} government tenders with Tender Elite.`,
+  alternates: { canonical: "/states/jammu-and-kashmir" },
+};
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 

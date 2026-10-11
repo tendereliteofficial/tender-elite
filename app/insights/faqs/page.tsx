@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Tender FAQs",
+  description:
+    "Answers to common questions on government tenders, GeM registration, bid documentation and eligibility in India, explained simply by the Tender Elite team.",
+  alternates: { canonical: "/insights/faqs" },
+};
+
 /* =========================================================
    DATA
 ========================================================= */

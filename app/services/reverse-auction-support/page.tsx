@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("reverse-auction-support")} Services`,
+  description: `Professional ${_s("reverse-auction-support")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
+  alternates: { canonical: "/services/reverse-auction-support" },
+};
+
 import Link from "next/link";
 
 /* =========================================================

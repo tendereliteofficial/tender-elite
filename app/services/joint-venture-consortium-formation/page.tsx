@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("joint-venture-consortium-formation")} Services`,
+  description: `Professional ${_s("joint-venture-consortium-formation")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
+  alternates: { canonical: "/services/joint-venture-consortium-formation" },
+};
+
 import Link from "next/link";
 
 /* =========================================================

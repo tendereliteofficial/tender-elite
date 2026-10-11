@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("fmcg-consumer-goods")} Tender Support`,
+  description: `Find, prepare and win ${_s("fmcg-consumer-goods")} government tenders in India. Tender Elite offers expert bidding, documentation and compliance support.`,
+  alternates: { canonical: "/industries/fmcg-consumer-goods" },
+};
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 

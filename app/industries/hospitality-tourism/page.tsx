@@ -1,3 +1,11 @@
+import { slugToTitle as _s } from "@/lib/seo";
+
+export const metadata = {
+  title: `${_s("hospitality-tourism")} Tender Support`,
+  description: `Find, prepare and win ${_s("hospitality-tourism")} government tenders in India. Tender Elite offers expert bidding, documentation and compliance support.`,
+  alternates: { canonical: "/industries/hospitality-tourism" },
+};
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 
