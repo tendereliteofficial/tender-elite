@@ -18,8 +18,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tender Elite",
-  description: "Your Trusted Tender Partner",
+  metadataBase: new URL("https://www.tenderelite.com"),
+  title: {
+    default: "Tender Elite | Government Tender Support Services",
+    template: "%s | Tender Elite",
+  },
+  description:
+    "Tender Elite helps businesses find, bid and win government tenders across India. Expert tender search, bidding and documentation support.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
