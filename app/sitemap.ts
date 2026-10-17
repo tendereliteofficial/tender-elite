@@ -24,8 +24,5 @@ function walk(dir: string, route = ""): string[] {
 export default function sitemap(): MetadataRoute.Sitemap {
   return walk(path.join(process.cwd(), "app")).map((p) => ({
     url: `${BASE}${p === "/" ? "" : p}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: p === "/" ? 1 : 0.7,
   }));
 }
