@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `${_s("hospitality-tourism")} Tender Support`,
   description: `Find, prepare and win ${_s("hospitality-tourism")} government tenders in India. Tender Elite offers expert bidding, documentation and compliance support.`,
   alternates: { canonical: "/industries/hospitality-tourism" },
@@ -2245,4 +2246,7 @@ export default function HospitalityTourismPage() {
 
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/industries/hospitality-tourism", baseMetadata);
 }

@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import Link from "next/link";
 
-export const metadata = {
+const baseMetadata = {
   title: "Tender Blogs",
   description:
     "Read Tender Elite's blogs on government tenders, GeM, bid preparation and compliance in India. Practical tips and updates for first-time and seasoned bidders.",
@@ -584,4 +585,7 @@ export default function BlogsPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/insights/blogs", baseMetadata);
 }

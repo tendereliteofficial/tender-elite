@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `${_s("chemicals-industrial-products")} Tender Support`,
   description: `Find, prepare and win ${_s("chemicals-industrial-products")} government tenders in India. Tender Elite offers expert bidding, documentation and compliance support.`,
   alternates: { canonical: "/industries/chemicals-industrial-products" },
@@ -1541,4 +1542,7 @@ export default function ChemicalsIndustrialProductsPage() {
 
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/industries/chemicals-industrial-products", baseMetadata);
 }

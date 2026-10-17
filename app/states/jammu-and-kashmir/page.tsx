@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `Government Tender Services in ${_s("jammu-and-kashmir")}`,
   description: `Tender search, bidding and documentation support for businesses in ${_s("jammu-and-kashmir")}. Track live ${_s("jammu-and-kashmir")} government tenders with Tender Elite.`,
   alternates: { canonical: "/states/jammu-and-kashmir" },
@@ -1645,4 +1646,7 @@ export default function JammuAndKashmirPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/states/jammu-and-kashmir", baseMetadata);
 }

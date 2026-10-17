@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import InsightsClient from "./InsightsClient";
 
-export const metadata = {
+const baseMetadata = {
   title: "Tender Insights & Resources",
   description:
     "Tender insights, guides and FAQs from Tender Elite. Learn how government tenders work in India and get practical tips to prepare stronger bids.",
@@ -9,4 +10,7 @@ export const metadata = {
 
 export default function Page() {
   return <InsightsClient />;
+}
+export async function generateMetadata() {
+  return withYoast("/insights", baseMetadata);
 }

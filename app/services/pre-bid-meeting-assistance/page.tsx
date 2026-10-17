@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `${_s("pre-bid-meeting-assistance")} Services`,
   description: `Professional ${_s("pre-bid-meeting-assistance")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
   alternates: { canonical: "/services/pre-bid-meeting-assistance" },
@@ -1135,4 +1136,7 @@ export default function PreBidMeetingAssistancePage() {
 
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/services/pre-bid-meeting-assistance", baseMetadata);
 }

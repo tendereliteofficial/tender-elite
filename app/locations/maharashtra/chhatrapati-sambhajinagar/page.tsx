@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `Tender Services in ${_s("chhatrapati-sambhajinagar")}, ${_s("maharashtra")}`,
   description: `Get local tender support in ${_s("chhatrapati-sambhajinagar")}, ${_s("maharashtra")}: tender search, GeM registration, bid preparation and submission by Tender Elite.`,
   alternates: { canonical: "/locations/maharashtra/chhatrapati-sambhajinagar" },
@@ -2065,4 +2066,7 @@ export default function ChhatrapatiSambhajinagarPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/locations/maharashtra/chhatrapati-sambhajinagar", baseMetadata);
 }

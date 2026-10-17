@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `Tender Services in ${_s("maharashtra")}`,
   description: `Explore tender support across cities in ${_s("maharashtra")}. Tender Elite helps with tender search, GeM registration, bidding and documentation.`,
   alternates: { canonical: "/locations/maharashtra" },
@@ -844,4 +845,7 @@ export default function MaharashtraLocationsPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/locations/maharashtra", baseMetadata);
 }

@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `${_s("brand-approval-assistance")} Services`,
   description: `Professional ${_s("brand-approval-assistance")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
   alternates: { canonical: "/services/brand-approval-assistance" },
@@ -968,4 +969,7 @@ export default function BrandApprovalAssistancePage() {
 
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/services/brand-approval-assistance", baseMetadata);
 }

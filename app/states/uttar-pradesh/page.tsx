@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `Government Tender Services in ${_s("uttar-pradesh")}`,
   description: `Tender search, bidding and documentation support for businesses in ${_s("uttar-pradesh")}. Track live ${_s("uttar-pradesh")} government tenders with Tender Elite.`,
   alternates: { canonical: "/states/uttar-pradesh" },
@@ -1717,4 +1718,7 @@ export default function UttarPradeshPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/states/uttar-pradesh", baseMetadata);
 }

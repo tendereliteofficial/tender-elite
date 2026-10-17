@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import Link from "next/link";
 
-export const metadata = {
+const baseMetadata = {
   title: "Tender FAQs",
   description:
     "Answers to common questions on government tenders, GeM registration, bid documentation and eligibility in India, explained simply by the Tender Elite team.",
@@ -594,4 +595,7 @@ export default function FAQsPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/insights/faqs", baseMetadata);
 }

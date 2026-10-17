@@ -1,3 +1,6 @@
+import type { Metadata } from "next";
+import { withYoast } from "@/lib/yoast-seo";
+
 import Link from "next/link";
 
 const services = [
@@ -767,4 +770,11 @@ export default function Home() {
 </footer>
     </main>
   );
+}
+const baseMetadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
+export async function generateMetadata() {
+  return withYoast("/", baseMetadata);
 }

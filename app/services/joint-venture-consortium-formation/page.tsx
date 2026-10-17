@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `${_s("joint-venture-consortium-formation")} Services`,
   description: `Professional ${_s("joint-venture-consortium-formation")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
   alternates: { canonical: "/services/joint-venture-consortium-formation" },
@@ -1236,4 +1237,7 @@ export default function JointVentureConsortiumFormationPage() {
 
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/services/joint-venture-consortium-formation", baseMetadata);
 }

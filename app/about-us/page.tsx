@@ -1,7 +1,8 @@
+import { withYoast } from "@/lib/yoast-seo";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-export const metadata = {
+const baseMetadata = {
   title: "About Us",
   description:
     "Learn about Tender Elite, a trusted government tender partner in India. Meet our team and see how we help businesses find, bid and win tenders.",
@@ -2018,4 +2019,7 @@ export default function AboutUsPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/about-us", baseMetadata);
 }

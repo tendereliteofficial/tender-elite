@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import Link from "next/link";
 
-export const metadata = {
+const baseMetadata = {
   title: "Our Tender Services",
   description:
     "Tender Elite offers end-to-end tender services: portal registration, GeM support, documentation, bid management and submission for Indian government tenders.",
@@ -652,4 +653,7 @@ export default function ServicesPage() {
 
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/services", baseMetadata);
 }

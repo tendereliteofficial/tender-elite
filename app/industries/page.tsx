@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import Link from "next/link";
 
-export const metadata = {
+const baseMetadata = {
   title: "Industries We Serve",
   description:
     "Explore the industries Tender Elite serves, from construction and railway to IT, healthcare and oil & gas. Get tender support tailored to your sector.",
@@ -694,4 +695,7 @@ export default function IndustriesPage() {
 
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/industries", baseMetadata);
 }

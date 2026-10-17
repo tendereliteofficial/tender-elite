@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `${_s("reverse-auction-support")} Services`,
   description: `Professional ${_s("reverse-auction-support")} services for government tenders. Tender Elite helps you bid accurately, stay compliant and win more contracts.`,
   alternates: { canonical: "/services/reverse-auction-support" },
@@ -1152,4 +1153,7 @@ export default function ReverseAuctionSupportPage() {
 
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/services/reverse-auction-support", baseMetadata);
 }

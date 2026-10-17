@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import Link from "next/link";
 
-export const metadata = {
+const baseMetadata = {
   title: "Tender Services Across India",
   description:
     "Find Tender Elite tender support near you. We help businesses across Maharashtra and India with tender search, GeM registration, bidding and compliance.",
@@ -1078,4 +1079,7 @@ export default function LocationsPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/locations", baseMetadata);
 }

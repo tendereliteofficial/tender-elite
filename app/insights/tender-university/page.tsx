@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import Link from "next/link";
 
-export const metadata = {
+const baseMetadata = {
   title: "Tender University",
   description:
     "Tender University by Tender Elite: learn government tender basics, GeM, e-procurement and bidding strategy through simple guides for new and growing businesses.",
@@ -593,4 +594,7 @@ export default function TenderUniversityPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/insights/tender-university", baseMetadata);
 }

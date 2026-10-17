@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `Government Tender Services in ${_s("mizoram")}`,
   description: `Tender search, bidding and documentation support for businesses in ${_s("mizoram")}. Track live ${_s("mizoram")} government tenders with Tender Elite.`,
   alternates: { canonical: "/states/mizoram" },
@@ -1682,4 +1683,7 @@ export default function MizoramPage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/states/mizoram", baseMetadata);
 }

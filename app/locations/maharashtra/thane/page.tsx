@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import ThaneClient from "./ThaneClient";
 
-export const metadata = {
+const baseMetadata = {
   title: "Tender Services in Thane, Maharashtra",
   description:
     "Get local tender support in Thane, Maharashtra: tender search, GeM registration, bid preparation and submission by Tender Elite.",
@@ -9,4 +10,7 @@ export const metadata = {
 
 export default function Page() {
   return <ThaneClient />;
+}
+export async function generateMetadata() {
+  return withYoast("/locations/maharashtra/thane", baseMetadata);
 }

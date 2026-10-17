@@ -1,6 +1,7 @@
+import { withYoast } from "@/lib/yoast-seo";
 import { slugToTitle as _s } from "@/lib/seo";
 
-export const metadata = {
+const baseMetadata = {
   title: `${_s("security-surveillance")} Tender Support`,
   description: `Find, prepare and win ${_s("security-surveillance")} government tenders in India. Tender Elite offers expert bidding, documentation and compliance support.`,
   alternates: { canonical: "/industries/security-surveillance" },
@@ -2168,4 +2169,7 @@ export default function SecuritySurveillancePage() {
       <Footer />
     </main>
   );
+}
+export async function generateMetadata() {
+  return withYoast("/industries/security-surveillance", baseMetadata);
 }
