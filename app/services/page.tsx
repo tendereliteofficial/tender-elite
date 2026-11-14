@@ -614,9 +614,9 @@ export default function ServicesPage() {
       </h3>
 
       <p className="text-sm leading-8 tracking-wider text-white/80">
-        +91 1234567890
+        +91 7045060062
         <br />
-        abc@tenderelite.com
+        sales@tenderelite.com
         <br />
         Mumbai, Maharashtra, India
       </p>
@@ -633,17 +633,17 @@ export default function ServicesPage() {
 
     <div className="flex flex-wrap gap-5 sm:gap-6">
       <Link
-        href="/privacy-policy"
-        className="transition-colors hover:text-[#D4A017]"
-      >
-        Privacy Policy
-      </Link>
+            href="app/privacy-policy"
+            className="transition-colors hover:text-[#D4A017]"
+          >
+            Privacy Policy
+          </Link>
 
-      <Link
-        href="/terms"
-        className="transition-colors hover:text-[#D4A017]"
-      >
-        Terms of Service
+          <Link
+            href="app/disclaimer"
+            className="transition-colors hover:text-[#D4A017]"
+          >
+            Disclaimer
       </Link>
     </div>
 

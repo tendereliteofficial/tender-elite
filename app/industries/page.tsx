@@ -213,7 +213,7 @@ const industries: Industry[] = [
     description:
       "We assist chemical manufacturers, industrial product suppliers, laboratory equipment providers, industrial process companies, and specialty chemical businesses participating in procurement tenders. Our services include compliance support, technical documentation, product certifications, and procurement management for industrial and institutional supply projects.",
     image: industryImages[23],
-    link: "/industries/chemical-industrial-products"
+    link: "/industries/chemicals-industrial-products"
   },
   {
     title: "Hospitality & Tourism Industry",
@@ -675,17 +675,17 @@ export default function IndustriesPage() {
 
     <div className="flex flex-wrap gap-5 sm:gap-6">
       <Link
-        href="/privacy-policy"
-        className="transition-colors hover:text-[#D4A017]"
-      >
-        Privacy Policy
-      </Link>
+            href="app/privacy-policy"
+            className="transition-colors hover:text-[#D4A017]"
+          >
+            Privacy Policy
+          </Link>
 
-      <Link
-        href="/terms"
-        className="transition-colors hover:text-[#D4A017]"
-      >
-        Terms of Service
+          <Link
+            href="app/disclaimer"
+            className="transition-colors hover:text-[#D4A017]"
+          >
+            Disclaimer
       </Link>
     </div>
 

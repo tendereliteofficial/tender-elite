@@ -221,17 +221,17 @@ function Footer() {
 
         <div className="flex flex-wrap gap-5 sm:gap-6">
           <Link
-            href="/privacy-policy"
+            href="app/privacy-policy"
             className="transition-colors hover:text-[#D4A017]"
           >
             Privacy Policy
           </Link>
 
           <Link
-            href="/terms"
+            href="app/disclaimer"
             className="transition-colors hover:text-[#D4A017]"
           >
-            Terms of Service
+            Disclaimer
           </Link>
         </div>
       </div>
